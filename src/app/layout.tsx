@@ -13,8 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://torneos-fifa-ten.vercel.app"),
   title: "Copa Familiar FIFA ⚽",
-  description: "Torneo de FIFA en familia: sorteo de grupos, resultados y fase final.",
+  description:
+    "Torneo de FIFA en familia: sorteo de grupos en vivo, resultados y fase final.",
+  openGraph: {
+    title: "Copa Familiar FIFA",
+    description:
+      "Torneo de FIFA en familia: sorteo de grupos en vivo, resultados y fase final.",
+    type: "website",
+    locale: "es_CO",
+    siteName: "Copa Familiar FIFA",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Copa Familiar FIFA",
+    description: "Torneo de FIFA en familia: sorteo, resultados y fase final.",
+  },
 };
 
 export default function RootLayout({
