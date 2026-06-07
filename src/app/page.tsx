@@ -6,6 +6,7 @@ import HomeTab from "@/components/HomeTab";
 import DrawTab from "@/components/DrawTab";
 import GroupsTab from "@/components/GroupsTab";
 import FinalsTab from "@/components/FinalsTab";
+import MusicPlayer from "@/components/MusicPlayer";
 
 type Tab = "inicio" | "sorteo" | "grupos" | "final";
 
@@ -101,6 +102,8 @@ export default function Page() {
           ↺ Reiniciar torneo
         </button>
       </footer>
+
+      <MusicPlayer />
     </div>
   );
 }
